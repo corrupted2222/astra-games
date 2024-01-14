@@ -1,34 +1,60 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
-<meta charset="UTF-8">
-<link rel="icon" href="images/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	<title>Astra Games</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="games/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="games/favicon.ico" type="image/x-icon">
+    <title>Astra Games</title>
 
-<style>
-body {
-  background-color: black;
-  color: white;
-  font-family: sans-serif;
-}
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.card {
-  background-color: white;
-  width: 800px;
-  height: 570px;
-  padding: 20px;
-  align-items: center;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 20px;
-  margin-left: 250px;
-  margin-top: -1px;
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .title {
+            margin: 0;
+            color: white;
+            font-family: sans-serif;
+            font-size: 30px;
+        }
+
+        .back-button {
+            background-color: white;
+            color: black;
+            padding: 13px 20px; /* Adjust padding */
+            font-weight: bold;
+            border-radius: 100px;
+            text-decoration: none;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .card {
+            background-color: white;
+            width: 100%; /* Set width to 100% */
+            max-width: 800px; /* Set max-width */
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .custom-button {
-            padding: 13px 45px;
+            padding: 13px 20px; /* Adjust padding */
             background-color: black;
             color: white;
             font-weight: bold;
@@ -38,38 +64,51 @@ body {
             cursor: pointer;
             text-decoration: none;
             margin: 5px;
+            display: block;
+            text-align: center; /* Center text */
         }
 
-        /* Style for the button container */
         .button-container {
             display: flex;
             justify-content: center;
+            margin-top: 20px;
         }
-</style>
+    </style>
 
-</head> 
-
-
+</head>
 
 <body>
 
-  <div class="card">
-    <html><head><base target="_blank"></head><body><div style="display: flex; justify-content: space-between; margin: 5; padding: 0;">
-      <div style="flex-direction: column;">
-        <iframe src="https://html5.gamedistribution.com/rvvASMiM/5b0abd4c0faa4f5eb190a9a16d5a1b4c/index.html?gd_sdk_referrer_url=https%3A%2F%2Fconnectionsunlimited.io%2F%2F&amp;gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL2Nvbm5lY3Rpb25zdW5saW1pdGVkLmlvLy8iLCJwYXJlbnREb21haW4iOiJjb25uZWN0aW9uc3VubGltaXRlZC5pbyIsInRvcERvbWFpbiI6ImNvbm5lY3Rpb25zdW5saW1pdGVkLmlvIiwiaGFzSW1wcmVzc2lvbiI6dHJ1ZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xNiJ9" width="800" height="500" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" webkitallowfullscreen="true" mozallowfullscreen="true" msallowfullscreen="true" allowfullscreen="true"></iframe>
-      </div>
-    </div></body></html>
+    <div class="header">
+        <h1 class="title">Astra Games</h1>
+        <a class="back-button" onclick="goBack()">Back</a>
+    </div>
 
-    <div class="button-container">
-      <!-- Button 1 -->
-      <a class="custom-button" href="https://गणित.net/play/roblox-corporation/5349/roblox">Server 1</a>
-      <!-- Button 2 -->
-      <a class="custom-button" href="https://acb.caculatorgeo.xyz/demo">Server 2</a>
-      <!-- Button 3 -->
-      <a class="custom-button" href="https://acb.caculatorgeo.one/demo">Server 3</a>
-  </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 
+<div class="card">
+  <html><head><base target="_blank"></head><body><div style="display: flex; justify-content: space-between; margin: 5; padding: 0;">
+    <div style="flex-direction: column;">
+      <iframe src="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/version@f8de953e5d955baef80e3994a1105d74ad76315b/Rooftop-Snipers.xml" width="800" height="500" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" webkitallowfullscreen="true" mozallowfullscreen="true" msallowfullscreen="true" allowfullscreen="true"></iframe>
+    </div>
+  </div></body></html>
+
+  <div class="button-container">
+    <!-- Button 1 -->
+    <a class="custom-button" href="https://गणित.net/play/roblox-corporation/5349/roblox">Server 1</a>
+    <!-- Button 2 -->
+    <a class="custom-button" href="https://acb.caculatorgeo.xyz/demo">Server 2</a>
+    <!-- Button 3 -->
+    <a class="custom-button" href="https://acb.caculatorgeo.one/demo">Server 3</a>
   </div>
-    
+</div>
+
+
+
 </body>
+
 </html>
