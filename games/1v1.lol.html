@@ -23,7 +23,8 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px;
   margin-left: 250px;
-  margin-top: -1px;
+  margin-top: -100px;
+  align-items: center;
         }
 
         .custom-button {
@@ -44,6 +45,22 @@ body {
             display: flex;
             justify-content: center;
         }
+
+        .title-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .back-button {
+          background-color: white;
+          color: black;
+          padding: 13px 45px;
+          font-weight: bold;
+          border-radius: 100px;
+          cursor: pointer;
+          text-decoration: none;
+        }
 </style>
 
 </head> 
@@ -52,10 +69,22 @@ body {
 
 <body>
 
+  <div class="header">
+    <h1 class="title">Astra Games</h1>
+    <br>
+    <a class="back-button" onclick="goBack()" >Back</a>
+  </div>
+  
+  <script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+
   <div class="card">
     <html><head><base target="_blank"></head><body><div style="display: flex; justify-content: space-between; margin: 5; padding: 0;">
       <div style="flex-direction: column;">
-        <iframe src="https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@99563e3bf6eb25323e3bd5af20dcd9a261b97991/build/m3m/m3m.xml" width="800" height="500" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" webkitallowfullscreen="true" mozallowfullscreen="true" msallowfullscreen="true" allowfullscreen="true"></iframe>
+        <iframe src="https://1v1lolonline.github.io/1v1-lol-2/" width="800" height="500" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" webkitallowfullscreen="true" mozallowfullscreen="true" msallowfullscreen="true" allowfullscreen="true"></iframe>
       </div>
     </div></body></html>
 
@@ -67,8 +96,10 @@ body {
       <!-- Button 3 -->
       <a class="custom-button" href="https://acb.caculatorgeo.one/demo">Server 3</a>
   </div>
+</div>
+  
+   
 
-  </div>
-    
+
 </body>
 </html>

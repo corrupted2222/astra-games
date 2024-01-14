@@ -48,13 +48,13 @@
         .card-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-            gap: 20px;
+            gap: 30px;
         }
 
         .card {
             background-color: white;
-            height: 90px;
-            width: 90px;
+            height: 110px;
+            width: 110px;
             border-radius: 10px;
             padding: 10px;
             text-align: left;
@@ -62,18 +62,19 @@
         }
 
         .card img {
-            width: 70px;
-            height: 70px;
+            width: 90px;
+            height: 79px;
             border-radius: 0.5pc;
             position: absolute;
-            bottom: 35px;
+            bottom: 45px;
             left: 20px;
         }
 
         .card h3 {
             color: black;
             font-size: 14px;
-            margin-top: 65px;
+            margin-top: 80px;
+            text-align: center;
         }
 
         .card p {
@@ -108,309 +109,89 @@
     </div>
 
     <script>
-document.addEventListener("DOMContentLoaded", function () {
-    // Sample card data
-    const cards = [
-        {
-            title: "1v1.lol",
-            image: "card-icon/1v1lol.png",
-            link: "pages/roblox.html", // Add the desired URL
-        },
-        {
-            title: "Rooftop Sniper",
-            image: "card-icon/rooftop.png",
-            link: "pages/rooftop.html", // Add the desired URL
-        },
-        {
-            title: "Moto X3M",
-            image: "card-icon/motox3m.png",
-            link: "pages/MotoX3M.html", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        {
-            title: "Game Name",
-            image: "images/astra-games.jpg",
-            link: "#", // Add the desired URL
-        },
-        
-        // Add more card data with links as needed
-    ];
-
-    const searchInput = document.getElementById("searchInput");
-    const cardContainer = document.getElementById("cardContainer");
-
-    // Function to render cards based on the search input
-    function renderCards(query) {
-        cardContainer.innerHTML = ""; // Clear previous results
-
-        // Filter cards based on the search query
-        const filteredCards = cards.filter(card =>
-            card.title.toLowerCase().includes(query.toLowerCase())
-        );
-
-        // Display the filtered cards in the grid
-        filteredCards.forEach(card => {
-            const cardElement = document.createElement("div");
-            cardElement.classList.add("card");
-
-            // Add title and content
-            cardElement.innerHTML = `
-                <h3>${card.title}</h3>
-            `;
-
-            // Add image and link if available
-            if (card.image) {
-                const aElement = document.createElement("a");
-                aElement.href = card.link || "#"; // If link is not available, set a default value
-                aElement.target = "_blank"; // Open link in a new tab
-                const imgElement = document.createElement("img");
-                imgElement.src = card.image;
-                aElement.appendChild(imgElement);
-                cardElement.appendChild(aElement);
+        document.addEventListener("DOMContentLoaded", function () {
+            const cardContainer = document.getElementById("cardContainer");
+    
+            // Sample card data
+            const cards = [
+                {
+                    title: "1v1.lol",
+                    image: "card-icon/1v1lol.png",
+                    link: "games/1v1.lol.html", // Add the desired URL
+                },
+                {
+                    title: "Rooftop Sniper",
+                    image: "card-icon/rooftop.png",
+                    link: "games/rooftop.html", // Add the desired URL
+                },
+                {
+                    title: "Moto X3M",
+                    image: "card-icon/motox3m.png",
+                    link: "games/MotoX3M.html", // Add the desired URL
+                },
+                // Add more card data with links as needed
+            ];
+    
+            // Function to render cards based on the search input
+            function renderCards(query) {
+                cardContainer.innerHTML = ""; // Clear previous results
+    
+                // Filter cards based on the search query
+                const filteredCards = cards.filter(card =>
+                    card.title.toLowerCase().includes(query.toLowerCase())
+                );
+    
+                // Display the filtered cards in the grid
+                filteredCards.forEach(card => {
+                    const cardElement = document.createElement("div");
+                    cardElement.classList.add("card");
+    
+                    // Add title and content
+                    cardElement.innerHTML = `
+                        <h3>${card.title}</h3>
+                    `;
+    
+                    // Add image and link if available
+                    if (card.image) {
+                        const aElement = document.createElement("a");
+                        aElement.href = card.link || "#"; // If link is not available, set a default value
+                        const imgElement = document.createElement("img");
+                        imgElement.src = card.image;
+                        aElement.appendChild(imgElement);
+                        cardElement.appendChild(aElement);
+                    }
+    
+                    cardContainer.appendChild(cardElement);
+                });
             }
-
-            cardContainer.appendChild(cardElement);
+    
+            // Event listener for the search input
+            document.getElementById("searchInput").addEventListener("input", function () {
+                renderCards(this.value);
+            });
+    
+            // Event listener for the images in cards
+            cardContainer.addEventListener('click', function (event) {
+                const clickedImage = event.target.closest('.card img');
+    
+                if (clickedImage) {
+                    // Get the associated link from the parent card
+                    const card = clickedImage.closest('.card');
+                    const link = cards.find(c => c.title === card.querySelector('h3').innerText)?.link;
+    
+                    // Open the link in the same tab
+                    if (link) {
+                        window.location.href = link;
+                    }
+                }
+            });
+    
+            // Initial rendering of all cards
+            renderCards("");
         });
-    }
-
-    // Event listener for the search input
-    searchInput.addEventListener("input", function () {
-        renderCards(searchInput.value);
-    });
-
-    // Initial rendering of all cards
-    renderCards("");
-});
     </script>
+    
+
 
 </body>
 </html>
