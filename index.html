@@ -1,165 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta name="google-adsense-account" content="ca-pub-8380101823127601">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="apple-touch-icon" sizes="700x700" href="images/astra.jpg">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <meta name="apple-mobile-web-app-title" content="Astra">
-        <link rel="icon" href="games/favicon.ico" type="image/x-icon">
-        <link rel="shortcut icon" href="games/favicon.ico" type="image/x-icon">
-        <title>Astra Games</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
+    <!-- APPLE APP -->
+
+    <link rel="apple-touch-icon" sizes="700x700" href="images/astra.jpg">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- TITLE -->
+
+    <meta name="apple-mobile-web-app-title" content="Further">
+    <link rel="icon" href="images/further.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="further.ico" type="image/x-icon">
+    <title>Astra</title>
+
+    <!-- EMBED -->
+
+    <meta property="og:title" content="Astra">
+    <meta property="og:description" content="futher.lol - A place where you can find tons of scripts.">
+    <meta property="og:image" content="/images/further.png">
+    <meta property="og:url" content="https://further.lol">
+
+    <style>
         body {
-            background-color: black;
-            color: white;
-            font-family: sans-serif;
             margin: 0;
             padding: 0;
+            background-color: black;
+            color: white;
         }
-
-        header {
-            text-align: center;
-            padding: 20px;
-        }
-
-        section {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        article {
-            margin-bottom: 40px;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            background-color: #333;
-            padding: 15px;
-            border-radius: 8px;
-            margin-top: 20px;
-            flex: 1;
-        }
-
-        .source-link {
-            color: blue;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-top: 10px;
-        }
-
-        .title-container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
+    
         .title {
             margin-top: 2px;
             margin-left: 4px;
             color: white;
-            font-family: sans-serif;
+            font-family: system-ui, -apple-system, sans-serif;
             font-size: 30px;
         }
 
-        .custom-link {
+        footer {
+            background-color: black;
             color: white;
-            font-weight: bold;
-            text-decoration: none;
-            font-size: 30px;
-            margin-left: 10px;
-            display: block;
-            position: absolute;
-            right: 15px;
-            top: 3px;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+    
+        .search {
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    
+        .container {
+            max-width: 90%;
+            margin: 0 auto;
+            text-align: center;
+        }
+    
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+    
+        .card {
+            background-color: transparent;
+            height: 170px;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: left;
+            position: relative;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
         }
 
+        .card:hover {
+            background-color: rgba(255, 255, 255, 0.1); /* Change the color on hover */
+        }
+    
+        .card img {
+            width: 100%;
+            height: 170px;
+            border-radius: 10px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    
+        .card h3 {
+            color: white;
+            font-family: system-ui, -apple-system, sans-serif;;
+            margin-top: 5px;
+            position: relative;
+            bottom: -140px;
+            right: 10px;
+        }
+    
+        .card p {
+            margin: 10px 0;
+        }
+    
+        .card a {
+            display: block;
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: 500px) {
+            .title {
+                font-size: 23px;
+            }
+        }
     </style>
 </head>
 <body>
+    <h1 class="title">Further</h1>
 
-<div class="title-container">
-  <h1 class="title">Astra Games</h1>
-  <a href="75392996798249702482647478387462938472204743.html" class="custom-link">Activities</a>
-</div>
 
-    <section>
-        <article>
-            <h2>Exploring Exoplanets Beyond Our Solar System</h2>
-            <p>Delve into the fascinating realm of exoplanets, planets that orbit stars outside our solar system. Scientists use advanced telescopes and observation techniques to study these distant worlds, unlocking secrets about their atmospheres and potential habitability.</p>
-            <div class="card">
-                <h3>Source Link</h3>
-                <p>This article was sourced from <a class="source-link" href="https://exoplanets.nasa.gov/news/1773/discovery-alert-earth-sized-planet-has-a-lava-hemisphere/">Astronomy Today</a>.</p>
-            </div>
-        </article>
-
-        <article>
-            <h2>The Mysteries of Black Holes Unveiled</h2>
-            <p>Embark on a journey to unravel the mysteries of black holes, enigmatic cosmic entities with gravitational forces so strong that nothing, not even light, can escape. Learn about recent discoveries and ongoing research shedding light on these fascinating celestial phenomena.</p>
-            <div class="card">
-                <h3>Source Link</h3>
-                <p>This article was sourced from <a class="source-link" href="https://nubeowatches.com/blogs/the-aquanova-journal/unveiling-the-mysteries-of-supermassive-black-holes-what-we-know-so-far">Astrophysics Journal</a>.</p>
-            </div>
-        </article>
-
-        <article>
-            <h2>Journey to the Edge of the Milky Way</h2>
-            <p>Embark on a cosmic journey to the outer reaches of the Milky Way galaxy. Explore the vastness of space, encounter stunning celestial phenomena, and learn about the challenges and wonders that await those who venture to the edge of our galactic neighborhood.</p>
-            <div class="card">
-                <h3>Source Link</h3>
-                <p>This article was sourced from <a class="source-link" href="https://en.wikipedia.org/wiki/Journey_to_the_Edge_of_the_Universe#:~:text=Journey%20to%20the%20Edge%20of%20the%20Universe%20is%20a%20documentary,UK%20edition%20by%20Sean%20Pertwee.">Galactic Explorer Magazine</a>.</p>
-            </div>
-        </article>
-
-        <article>
-            <h2>Unveiling the Secrets of Nebulae</h2>
-            <p>Uncover the secrets of nebulae, the vast clouds of gas and dust scattered throughout the cosmos. Explore the breathtaking beauty of these stellar nurseries and understand their role in the birth and death of stars, as well as their influence on the formation of planetary systems.</p>
-            <div class="card">
-                <h3>Source Link</h3>
-                <p>This article was sourced from <a class="source-link" href="https://www.nbcnews.com/id/wbna46311642">Nebula Research Institute</a>.</p>
-            </div>
-        </article>
-
-        <article>
-            <h2>Mars: The Red Planet's Geological Wonders</h2>
-            <p>Embark on a virtual journey to Mars, the fourth planet from the sun. Explore its rugged terrain, ancient riverbeds, and towering volcanoes. Learn about ongoing Mars missions, discover the geological wonders of the Red Planet, and stay updated on the latest findings from the Martian surface.</p>
-            <div class="card">
-                <h3>Source Link</h3>
-                <p>This article was sourced from <a class="source-link" href="https://www.space.com/47-mars-the-red-planet-fourth-planet-from-the-sun.html">Planetary Gazette</a>.</p>
-            </div>
-        </article>
-
-        <article>
-            <h2>The Search for Extraterrestrial Intelligence (SETI)</h2>
-            <p>Join the quest for extraterrestrial intelligence as scientists use radio telescopes and other methods to scan the cosmos for signals from intelligent civilizations. Explore the history of SETI, recent breakthroughs, and the ongoing efforts to answer the age-old question: Are we alone in the universe?</p>
-            <div class="card">
-                <h3>Source Link</h3>
-                <p>This article was sourced from <a class="source-link" href="https://www.planetary.org/sci-tech/seti">SETI Institute</a>.</p>
-            </div>
-        </article>
-
-        <article>
-            <h2>The Future of Space Exploration: Beyond the Moon</h2>
-            <p>Look ahead to the future of space exploration as humanity sets its sights beyond the Moon. Discover ambitious plans for crewed missions to Mars, asteroid mining, and the establishment of lunar bases. Stay informed about the latest developments shaping the next frontier of human exploration.</p>
-            <div class="card">
-                <h3>Source Link</h3>
-                <p>This article was sourced from <a class="source-link" href="https://www.nasa.gov/image-article/future-of-space-exploration-starts-earth/">Space Exploration Weekly</a>.</p>
-            </div>
-        </article>
-
-    </section>
-
+    <div class="container">
+        <input class="search" type="text" id="searchInput" placeholder="Search script by game.">
+        <div id="cardContainer" class="card-grid"></div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cards = [
+                {
+                    title: "Pet Simulator 99",
+                    image: "images/card-image/ps99.png",
+                    link: "https://jailbreak.com/ps99",
+                },
+                {
+                    title: "Blade Ball",
+                    image: "images/card-image/blade-ball.png",
+                    link: "scripts-page/blade-ball.html",
+                },
+                {
+                    title: "ESign",
+                    image: "images/card-image/test.png",
+                    link: "https://jailbreak.com/ps99",
+                },
+                {
+                    title: "New Card 1",
+                    image: "images/card-image/test.png",
+                    link: "https://example.com",
+                },
+                {
+                    title: "New Card 2",
+                    image: "images/card-image/test.png",
+                    link: "https://example.com",
+                },
+                {
+                    title: "Pet Simulator 99",
+                    image: "images/card-image/ps99.png",
+                    link: "https://jailbreak.com/ps99",
+                },
+                {
+                    title: "GBox",
+                    image: "images/card-image/test.png",
+                    link: "https://jailbreak.com/ps99",
+                },
+                {
+                    title: "ESign",
+                    image: "images/card-image/test.png",
+                    link: "https://jailbreak.com/ps99",
+                },
+                {
+                    title: "New Card 1",
+                    image: "images/card-image/test.png",
+                    link: "https://example.com",
+                },
+                {
+                    title: "New Card 2",
+                    image: "images/card-image/test.png",
+                    link: "https://example.com",
+                },
+                {
+                    title: "Pet Simulator 99",
+                    image: "images/card-image/ps99.png",
+                    link: "https://jailbreak.com/ps99",
+                },
+                {
+                    title: "GBox",
+                    image: "images/card-image/test.png",
+                    link: "https://jailbreak.com/ps99",
+                },
+                {
+                    title: "ESign",
+                    image: "images/card-image/test.png",
+                    link: "https://jailbreak.com/ps99",
+                },
+                {
+                    title: "New Card 1",
+                    image: "images/card-image/test.png",
+                    link: "https://example.com",
+                },
+                {
+                    title: "New Card 2",
+                    image: "images/card-image/test.png",
+                    link: "https://example.com",
+                },
+            ];
+            const searchInput = document.getElementById("searchInput");
+            const cardContainer = document.getElementById("cardContainer");
+            function renderCards(query) {
+                cardContainer.innerHTML = "";
+                const filteredCards = cards.filter(card => card.title.toLowerCase().includes(query.toLowerCase()));
+                filteredCards.forEach(card => {
+                    const cardElement = document.createElement("div");
+                    cardElement.classList.add("card");
+                    cardElement.addEventListener("click", function() {
+                        window.location.href = card.link;
+                    });
+                    if (card.image) {
+                        const imgElement = document.createElement("img");
+                        imgElement.src = card.image;
+                        cardElement.appendChild(imgElement);
+                    }
+                    const titleElement = document.createElement("h3");
+                    titleElement.textContent = card.title;
+                    cardElement.appendChild(titleElement);
+                    cardContainer.appendChild(cardElement);
+                });
+            }
+            searchInput.addEventListener("input", function () {
+                renderCards(searchInput.value);
+            });
+            renderCards("");
+        });
+    </script>
+    <footer>
+        &copy; 2024 Further. All rights reserved.
+    </footer>
 </body>
 </html>
